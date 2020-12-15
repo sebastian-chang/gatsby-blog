@@ -22,7 +22,7 @@ const IndexPage = ({ data }) => {
       <SEO title="Home" />
       <div>
         <h1>Sebastian's Thoughts</h1>
-        <h4>{data.allMarkdownRemark.totalCount}</h4>
+        <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
         {
           data.allMarkdownRemark.edges.map(({ node }) => {
             console.log('this is inside node ', node)
